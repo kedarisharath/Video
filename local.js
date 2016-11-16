@@ -29,5 +29,5 @@ http.createServer(function (req, res) {
     res.writeHead(200, { 'Content-Length': total, 'Content-Type': 'video/mp4' });
     fs.createReadStream(path).pipe(res);
   }
-}).listen(1337, '127.0.0.1');
-console.log('Server running at http://127.0.0.1:1337/');
+}).listen(1337, 'ec2-54-183-254-173.us-west-1.compute.amazonaws.com');
+console.log('Server running at http://ec2-54-183-254-173.us-west-1.compute.amazonaws.com:1337/');
